@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <div id="id01">
+        {{firstName}} + {{lastName}}
+    </div>
+
+
+
+
+
+    <script>
+        if (window.localStorage.getItem('lang') == "cn") {
+            let myObject = { "firstName": "aaaa", "lastName": "cccc" };
+        } else {
+            let myObject = { "firstName": "John", "lastName": "Doe" };
+        }
+        w3.displayObject("id01", myObject);
+    </script>
+    <script src="./js/w3.js"></script>
+</body>
+
+</html>
